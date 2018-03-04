@@ -6,7 +6,7 @@
 #    By: tgreil <tgreil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/10 13:32:03 by tgreil            #+#    #+#              #
-#    Updated: 2018/03/04 11:27:18 by mgreil           ###   ########.fr        #
+#    Updated: 2018/03/04 11:40:43 by mgreil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,10 @@ SRCS	=	ft_memset.c				\
 			ft_striter.c			\
 			ft_striteri.c			\
 			ft_strmap.c				\
-			ft_strmapi.c
+			ft_strmapi.c			\
+			ft_strequ.c				\
+			ft_strnequ.c			\
+			ft_strsub.c
 
 OBJS	=	$(SRCS:.c=.o)
 
