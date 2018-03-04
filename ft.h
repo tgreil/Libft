@@ -22,5 +22,19 @@ char		*ft_strncpy(char *s1, char *s2, size_t n);
 char		*ft_strcat(char *s1, char *s2);
 char		*ft_strncat(char *s1, char *s2, size_t n);
 char		*ft_strlcat(char *s1, char *s2, size_t size);
+char		*ft_strchr(const char *s, int c);
+char		*ft_strrchr(const char *s, int c);
+char		*ft_strstr(char *str, char *to_find);
+char		*ft_strnstr(const char *str, const char *to_find, size_t len);
+int			ft_strcmp(char *s1, char *s2);
+int			ft_strncmp(char *s1, char *s2, size_t n);
+int			ft_atoi(char *str);
+int			ft_isalpha(int c);
+int			ft_isdigit(int c);
+int			ft_isalnum(int c);
+int			ft_isascii(int c);
+int			ft_isprint(int c);
+int			ft_toupper(int c);
+int			ft_tolower(int c);
 
 #endif
