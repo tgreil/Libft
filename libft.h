@@ -48,5 +48,17 @@ char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 int			ft_strequ(const char *s1, const char *s2);
 int			ft_strnequ(const char *s1, const char *s2, size_t n);
 char		*ft_strsub(const char *s, unsigned int start, size_t len);
+char		*ft_strjoin(char const *s1, const char *s2);
+char		*ft_strtrim(const char *s);
+char		**ft_strsplit(const char *s, char c);
+char		*ft_itoa(int n);
+void		ft_putchar(char c);
+void		ft_putstr(const char *s);
+void		ft_putendl(const char *s);
+void		ft_putnbr(int n);
+void		ft_putchar_fd(char c, int fd);
+void		ft_putstr_fd(const char *s, int fd);
+void		ft_putendl_fd(const char *s, int fd);
+void		ft_putnbr_fd(int n, int fd);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: tgreil <tgreil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/10 13:32:03 by tgreil            #+#    #+#              #
-#    Updated: 2018/03/04 11:40:43 by mgreil           ###   ########.fr        #
+#    Updated: 2018/03/04 12:52:31 by mgreil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ RM		=	rm -rf
 
 NAME	=	libft.a
 
-CFLAGS	=	-Wall -Wextra -Werror
+CFLAGS	+=	-Wall -Wextra -Werror
 
 CFLAGS	+=	-I.
 
@@ -57,12 +57,25 @@ SRCS	=	ft_memset.c				\
 			ft_strmapi.c			\
 			ft_strequ.c				\
 			ft_strnequ.c			\
-			ft_strsub.c
+			ft_strsub.c				\
+			ft_strjoin.c			\
+			ft_strtrim.c			\
+			ft_strsplit.c			\
+			ft_itoa.c				\
+			ft_putchar.c			\
+			ft_putstr.c				\
+			ft_putendl.c			\
+			ft_putnbr.c				\
+			ft_putchar_fd.c			\
+			ft_putstr_fd.c			\
+			ft_putendl_fd.c			\
+			ft_putnbr_fd.c
 
 OBJS	=	$(SRCS:.c=.o)
 
 $(NAME):	 $(OBJS)
 		ar rc $(NAME) $(OBJS)
+		ranlib $(NAME)
 
 all:		$(NAME)
 
