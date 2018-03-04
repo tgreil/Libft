@@ -74,4 +74,10 @@ void		ft_lstadd(t_list **alst, t_list *new);
 void		ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
+void		ft_putnbr_base(int nb, char *base);
+void		ft_putnbr_base_fd(int nb, char *base, int fd);
+char		*ft_convert_base(char *nb, char *base_from, char *base_to);
+int			ft_atoi_base(char *nb, char *base);
+void		ft_print_memory(void *memory, size_t size);
+
 #endif

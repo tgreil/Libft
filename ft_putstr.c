@@ -2,5 +2,5 @@
 
 void		ft_putstr(const char *str)
 {
-	write(1, str, ft_strlen((char *)str));
+	ft_putstr_fd(str, 1);
 }

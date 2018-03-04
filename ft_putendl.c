@@ -2,6 +2,5 @@
 
 void		ft_putendl(const char *s)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	ft_putendl_fd(s, 1);
 }

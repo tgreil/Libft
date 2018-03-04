@@ -6,7 +6,7 @@
 #    By: tgreil <tgreil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/10 13:32:03 by tgreil            #+#    #+#              #
-#    Updated: 2018/03/04 13:22:37 by mgreil           ###   ########.fr        #
+#    Updated: 2018/03/04 13:48:20 by mgreil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,12 @@ SRCS	=	ft_memset.c				\
 			ft_lstdel.c				\
 			ft_lstadd.c				\
 			ft_lstiter.c			\
-			ft_lstmap.c
+			ft_lstmap.c				\
+			ft_putnbr_base.c		\
+			ft_putnbr_base_fd.c		\
+			ft_convert_base.c		\
+			ft_atoi_base.c			\
+			ft_print_memory.c
 
 OBJS	=	$(SRCS:.c=.o)
 
