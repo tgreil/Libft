@@ -6,7 +6,7 @@
 #    By: tgreil <tgreil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/10 13:32:03 by tgreil            #+#    #+#              #
-#    Updated: 2018/03/04 10:44:50 by mgreil           ###   ########.fr        #
+#    Updated: 2018/03/04 11:27:18 by mgreil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ RM		=	rm -rf
 
 NAME	=	libft.a
 
-FLAGS	=	-Wall -Wextra -Werror
+CFLAGS	=	-Wall -Wextra -Werror
 
-FLAGS	+=	-I.
+CFLAGS	+=	-I.
 
 SRCS	=	ft_memset.c				\
 			ft_bzero.c				\
@@ -45,7 +45,16 @@ SRCS	=	ft_memset.c				\
 			ft_isascii.c			\
 			ft_isprint.c			\
 			ft_toupper.c			\
-			ft_tolower.c
+			ft_tolower.c			\
+			ft_memalloc.c			\
+			ft_memdel.c				\
+			ft_strnew.c				\
+			ft_strdel.c				\
+			ft_strclr.c				\
+			ft_striter.c			\
+			ft_striteri.c			\
+			ft_strmap.c				\
+			ft_strmapi.c
 
 OBJS	=	$(SRCS:.c=.o)
 
