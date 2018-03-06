@@ -21,7 +21,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		src++;
 		i++;
 	}
-	if (i < n)
-		dest[i] = '\0';
+	while (i < n)
+		dest[i++] = '\0';
 	return (dest);
 }

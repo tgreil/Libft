@@ -8,6 +8,7 @@ char		*ft_strsub(const char *s, unsigned int start, size_t len)
 
 	i = 0;
 	if (!(new = malloc(len + 1)))
+		return (NULL);
 	while (i < len)
 	{
 		new[i] = s[start + i];

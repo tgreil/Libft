@@ -9,10 +9,10 @@ char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 	while (s1[i])
 	{
 		compar = 0;
-		while (s1[i + compar] && s2[compar] && i < n &&
+		while (s1[i + compar] && s2[compar] && i + compar < n &&
 								s1[i + compar] == s2[compar])
 			compar++;
-		if (!s2[compar] || compar == n)
+		if (!s2[compar])
 			return ((char *)s1 + i);
 		i++;
 	}

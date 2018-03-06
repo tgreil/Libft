@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int		ft_itoa_getsize(int nb)
+static int	ft_itoa_getsize(int nb)
 {
 	int	size;
 
@@ -20,7 +20,7 @@ int		ft_itoa_getsize(int nb)
 	return (size);
 }
 
-char	*ft_itoa(int nb)
+char		*ft_itoa(int nb)
 {
 	char	*new;
 	size_t	len;

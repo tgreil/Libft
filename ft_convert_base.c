@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int		ft_getnbr(char *nb, char *base, int len)
+static int	ft_getnbr(char *nb, char *base, int len)
 {
 	int	is_neg;
 	int	total;
@@ -37,7 +37,7 @@ int		ft_getnbr(char *nb, char *base, int len)
 	return (total * is_neg);
 }
 
-void	ft_convert_base_2_fill(int nb, char *base, int new_len, char *new)
+static void	ft_convert_base_2_fill(int nb, char *base, int new_len, char *new)
 {
 	int	i;
 	int	tmp;
@@ -66,7 +66,7 @@ void	ft_convert_base_2_fill(int nb, char *base, int new_len, char *new)
 	*new = '\0';
 }
 
-char	*ft_convert_base_2(int nb, char *base, int len)
+static char	*ft_convert_base_2(int nb, char *base, int len)
 {
 	char	*new;
 	int		tmp;

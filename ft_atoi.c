@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_neg_limit(char *str)
+static int	is_neg_limit(char *str)
 {
 	if (str[0] == '-' && str[1] == '2' && str[2] == '1' && str[3] == '4' &&
 		str[4] == '7' && str[5] == '4' && str[6] == '8' && str[7] == '3' &&
@@ -19,7 +19,7 @@ int	is_neg_limit(char *str)
 	return (0);
 }
 
-int	ft_atoi(char *str)
+int			ft_atoi(char *str)
 {
 	int nbr;
 	int is_neg;

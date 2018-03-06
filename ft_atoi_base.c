@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	check_base(char *base)
+static int	check_base(char *base)
 {
 	int	size;
 	int	i;
@@ -34,7 +34,7 @@ int	check_base(char *base)
 	return (1);
 }
 
-int	check_str(char *str, char *base, int base_len)
+static int	check_str(char *str, char *base, int base_len)
 {
 	int	i_str;
 	int	i_base;
@@ -54,7 +54,7 @@ int	check_str(char *str, char *base, int base_len)
 	return (1);
 }
 
-int	ft_atoi_base_rec(char *str, char *base, int base_len, int neg_value)
+static int	ft_atoi_base_rec(char *str, char *base, int base_len, int neg_value)
 {
 	int	nbr;
 	int	i_base;
@@ -74,7 +74,7 @@ int	ft_atoi_base_rec(char *str, char *base, int base_len, int neg_value)
 	return (nbr);
 }
 
-int	ft_atoi_base(char *str, char *base)
+int			ft_atoi_base(char *str, char *base)
 {
 	int	base_len;
 	int	neg_value;

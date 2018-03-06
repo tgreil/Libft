@@ -12,17 +12,7 @@
 
 #include "libft.h"
 
-int		my_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-int		is_error(char *base)
+static int	is_error(char *base)
 {
 	int	i;
 	int	n;
@@ -44,7 +34,7 @@ int		is_error(char *base)
 	return (0);
 }
 
-void	ft_putnbr_base_fd(int nbr, char *base, int fd)
+void		ft_putnbr_base_fd(int nbr, char *base, int fd)
 {
 	int	base_size;
 

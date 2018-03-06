@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include "libft.h"
 
-void	ft_print_memory_first(int addr, char *base)
+static void	ft_print_memory_first(int addr, char *base)
 {
 	ft_putchar(base[addr / 16 / 16 / 16 / 16 / 16 / 16 / 16 % 16]);
 	ft_putchar(base[addr / 16 / 16 / 16 / 16 / 16 / 16 % 16]);
@@ -24,7 +24,7 @@ void	ft_print_memory_first(int addr, char *base)
 	ft_putchar(base[addr % 16]);
 }
 
-void	ft_print_memory_second(unsigned char *addr, unsigned int size,
+static void	ft_print_memory_second(unsigned char *addr, unsigned int size,
 																	char *base)
 {
 	unsigned int	i;
@@ -53,7 +53,7 @@ void	ft_print_memory_second(unsigned char *addr, unsigned int size,
 	}
 }
 
-int		ft_print_memory_third(unsigned char *addr, unsigned int size)
+static int	ft_print_memory_third(unsigned char *addr, unsigned int size)
 {
 	unsigned int	i;
 
@@ -69,10 +69,10 @@ int		ft_print_memory_third(unsigned char *addr, unsigned int size)
 	return (i);
 }
 
-void	*ft_print_memory(void *addr, unsigned int size)
+void	ft_print_memory(void *addr, size_t size)
 {
 	unsigned char	*un_addr;
-	unsigned int	i;
+	size_t			i;
 
 	i = 0;
 	un_addr = (unsigned char *)addr;
@@ -83,5 +83,4 @@ void	*ft_print_memory(void *addr, unsigned int size)
 		i += ft_print_memory_third(un_addr + i, size - i);
 		ft_putchar('\n');
 	}
-	return (addr);
 }
