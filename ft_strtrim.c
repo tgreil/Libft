@@ -17,8 +17,7 @@ char		*ft_strtrim(const char *s)
 	while (size >= 0 &&
 			(s[i + size] == ' ' || s[i + size] == '\t' || s[i + size] == '\n'))
 		size--;
-	size++;
-	if (!(new = malloc(size + 1)))
+	if (!(new = malloc(++size + 1)))
 		return (NULL);
 	n = 0;
 	while (n < size)
