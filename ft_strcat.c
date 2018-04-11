@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgreil <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tgreil <tgreil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/07 17:55:26 by tgreil            #+#    #+#             */
-/*   Updated: 2018/02/07 17:55:27 by tgreil           ###   ########.fr       */
+/*   Updated: 2018/04/04 16:54:01 by tgreil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;
 	int	n;

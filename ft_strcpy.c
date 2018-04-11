@@ -6,18 +6,18 @@
 /*   By: tgreil <tgreil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/07 16:11:49 by tgreil            #+#    #+#             */
-/*   Updated: 2018/03/04 15:01:44 by mgreil           ###   ########.fr       */
+/*   Updated: 2018/04/04 16:53:40 by tgreil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int	i;
 
 	i = 0;
-	while (src && *src)
+	while (*src)
 	{
 		dest[i] = *src;
 		src++;
